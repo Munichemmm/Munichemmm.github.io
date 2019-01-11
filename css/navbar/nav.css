@@ -1,0 +1,281 @@
+.floatL{
+    float: left;
+}
+.floatR{
+    float: right;
+}
+.clear{
+    clear: both;
+}
+/* 這邊是nav的漢堡條 */
+#navicon {
+    position: fixed;
+    z-index: 3;
+    top: 20px;
+    right: 72px;
+}
+
+/* 這邊是nav下的內容 */
+.navbox {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.95);
+    position: fixed;
+    top: 0;
+    transform: translateX(100%);
+    transition: 1s;
+    z-index: 2;
+    opacity: 0;
+}
+
+.navbox .navLogo {
+    width: 100%;
+    height: 30vh;
+    padding-top: 38px;
+    position: relative;
+}
+
+.navbox .navLogo img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20%;
+}
+
+.navbox .box {
+    height: 60vh;
+    width: 100%;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 5px;
+}
+
+p {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    letter-spacing: 5px;
+}
+
+.navbox .box .Leftbox {
+    float: left;
+    width: 49%;
+    height: 100%;
+    text-align: right;
+    position: relative;
+
+}
+
+.navbox .box .Leftbox .textall {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 72px;
+}
+
+.navbox .box .Leftbox h1,
+.textbox {
+    margin-bottom: 40px;
+}
+
+.navbox .box .Leftbox h1,
+.textboxR {
+    margin-bottom: 40px;
+}
+
+.navbox .box .Rightbox {
+    float: right;
+    width: 49%;
+    height: 100%;
+    position: relative;
+
+}
+
+.navbox .box .Rightbox .textall {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 72px;
+}
+
+.navbox .box .Rightbox .textall .textbox {
+    width: 266px;
+    height: 50px;
+    margin-bottom: 60px
+}
+
+.navbox .box .Rightbox .textall .textbox:hover .hrbox hr {
+    opacity: 1;
+}
+
+.navbox .box .Rightbox .textall .textbox .hrbox {
+    width: 15%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.navbox .box .Rightbox .textall .textbox .hrbox hr {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.navbox .box .Rightbox .textall .textbox h1 {
+    width: 70%;
+    float: left;
+    text-align: center;
+    color: #000;
+}
+
+/* 中間的裝飾線 */
+.navbox .box .Centenbox {
+    float: left;
+    width: 2%;
+    height: 100%;
+    position: relative;
+}
+
+.navbox .box .Centenbox hr {
+    border: solid 1px #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*動畫Css*/
+.L-boxA {
+    opacity: 0;
+    animation-name: L-box;
+    animation-delay: 0.3s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.L-boxB {
+    opacity: 0;
+    animation-name: L-box;
+    animation-delay: 0.3s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+.R-boxA {
+    opacity: 0;
+    animation-name: R-box;
+    animation-delay: 0.3s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.R-boxB {
+    opacity: 0;
+    animation-name: R-box;
+    animation-delay: 0.3s;
+    animation-duration: 2.25s;
+    animation-fill-mode: forwards;
+
+}
+
+.R-boxC {
+    opacity: 0;
+    animation-name: R-box;
+    animation-delay: 0.3s;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+
+}
+
+.R-boxD {
+    opacity: 0;
+    animation-name: R-box;
+    animation-delay: 0.3s;
+    animation-duration: 2.75s;
+    animation-fill-mode: forwards;
+}
+.R-boxE {
+    opacity: 0;
+    animation-name: R-icon;
+    animation-delay: 0.3s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+.navhight {
+    opacity: 0;
+    animation-name: navhrhight;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes L-box {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+        left: 20%;
+    }
+
+    100% {
+        left: 0%;
+        opacity: 1;
+    }
+}
+
+@keyframes R-box {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+        right: 20%;
+    }
+
+    100% {
+        right: 0%;
+        opacity: 1;
+    }
+}
+@keyframes R-icon {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+        right: 10%;
+    }
+
+    100% {
+        right: 4%;
+        opacity: 1;
+    }
+}
+
+@keyframes navhrhight {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

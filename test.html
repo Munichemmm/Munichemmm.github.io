@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: red;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 以下為該複製程式碼 */
+        .floatL{
+            float: left;
+        }
+        .floatR{
+            float: right;
+        }
+        .clear{
+            clear: both;
+        }
+        /* 這邊是nav的漢堡條 */
+        #navicon {
+            position: fixed;
+            z-index: 3;
+            top: 20px;
+            right: 72px;
+        }
+
+        /* 這邊是nav下的內容 */
+        .navbox {
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(255, 255, 255, 0.85);
+            position: fixed;
+            top: 0;
+            z-index: -10;
+            transform: translateX(100%);
+            transition: 1s;
+        }
+
+        .navbox .navLogo {
+            width: 100%;
+            height: 30vh;
+            padding-top: 38px;
+            position: relative;
+        }
+
+        .navbox .navLogo img {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20%;
+        }
+
+        .navbox .box {
+            height: 60vh;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin: 0;
+            padding: 0;
+            letter-spacing: 5px;
+        }
+
+        p {
+            font-size: 30px;
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+            letter-spacing: 5px;
+        }
+
+        .navbox .box .Leftbox {
+            float: left;
+            width: 49%;
+            height: 100%;
+            text-align: right;
+            position: relative;
+
+        }
+
+        .navbox .box .Leftbox .textall {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 72px;
+        }
+
+        .navbox .box .Leftbox h1,
+        .textbox {
+            margin-bottom: 40px;
+        }
+
+        .navbox .box .Leftbox h1,
+        .textboxR {
+            margin-bottom: 40px;
+        }
+
+        .navbox .box .Rightbox {
+            float: right;
+            width: 49%;
+            height: 100%;
+            position: relative;
+
+        }
+
+        .navbox .box .Rightbox .textall {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 72px;
+        }
+
+        .navbox .box .Rightbox .textall .textbox {
+            width: 266px;
+            height: 50px;
+            margin-bottom: 60px
+        }
+
+        .navbox .box .Rightbox .textall .textbox:hover .hrbox hr {
+            opacity: 1;
+        }
+
+        .navbox .box .Rightbox .textall .textbox .hrbox {
+            width: 15%;
+            height: 100%;
+            float: left;
+            position: relative;
+        }
+
+        .navbox .box .Rightbox .textall .textbox .hrbox hr {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            margin: 0;
+            opacity: 0;
+            transition: 0.5s;
+        }
+
+        .navbox .box .Rightbox .textall .textbox h1 {
+            width: 70%;
+            float: left;
+            text-align: center;
+            color: #000;
+        }
+
+        /* 中間的裝飾線 */
+        .navbox .box .Centenbox {
+            float: left;
+            width: 2%;
+            height: 100%;
+            position: relative;
+        }
+
+        .navbox .box .Centenbox hr {
+            border: solid 1px #000;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* NAV的icon */
+        .navbox .navicon {
+            height: 10vh;
+            width: 100%;
+            position: relative;
+        }
+
+        .navbox .navicon .allicon {
+            width: 135px;
+            height: 55px;
+            position: absolute;
+            top: 50%;
+            right: 4%;
+            transform: translateY(-50%);
+        }
+
+        .navbox .navicon .allicon .icon-fb,.icon-ig {
+            width: 55px;
+            height: 55px;
+            background-color: #000;
+        }
+
+
+        /*動畫Css*/
+        .L-boxA {
+            opacity: 0;
+            animation-name: L-box;
+            animation-delay: 0.3s;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        .L-boxB {
+            opacity: 0;
+            animation-name: L-box;
+            animation-delay: 0.3s;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+        }
+
+        .R-boxA {
+            opacity: 0;
+            animation-name: R-box;
+            animation-delay: 0.3s;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        .R-boxB {
+            opacity: 0;
+            animation-name: R-box;
+            animation-delay: 0.3s;
+            animation-duration: 2.25s;
+            animation-fill-mode: forwards;
+
+        }
+
+        .R-boxC {
+            opacity: 0;
+            animation-name: R-box;
+            animation-delay: 0.3s;
+            animation-duration: 2.5s;
+            animation-fill-mode: forwards;
+
+        }
+
+        .R-boxD {
+            opacity: 0;
+            animation-name: R-box;
+            animation-delay: 0.3s;
+            animation-duration: 2.75s;
+            animation-fill-mode: forwards;
+        }
+        .R-boxE {
+            opacity: 0;
+            animation-name: R-icon;
+            animation-delay: 0.3s;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+        }
+
+        .navhight {
+            opacity: 0;
+            animation-name: navhrhight;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes L-box {
+            0% {
+                opacity: 0;
+            }
+
+            20% {
+                opacity: 0;
+                left: 20%;
+            }
+
+            100% {
+                left: 0%;
+                opacity: 1;
+            }
+        }
+
+        @keyframes R-box {
+            0% {
+                opacity: 0;
+            }
+
+            20% {
+                opacity: 0;
+                right: 20%;
+            }
+
+            100% {
+                right: 0%;
+                opacity: 1;
+            }
+        }
+        @keyframes R-icon {
+            0% {
+                opacity: 0;
+            }
+
+            20% {
+                opacity: 0;
+                right: 10%;
+            }
+
+            100% {
+                right: 4%;
+                opacity: 1;
+            }
+        }
+
+        @keyframes navhrhight {
+            0% {
+                opacity: 0;
+            }
+
+            20% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navicon"><i id="navshow" class="fas fa-2x fa-bars"></i></nav>
+    <!-- <i class="fas fa-times"></i> -->
+    <!-- 以下是navbox的內容 -->
+    <div class="navbox">
+        <!-- NAV內的LOGO -->
+        <div class="navLogo"><img src="/img/home/Logo-05.png" alt=""></div>
+        <div class="box">
+            <!-- 左邊的資訊內容 -->
+            <div class="Leftbox">
+                <div class="textall">
+                    <div class="lboxa">
+                        <h1>聯絡我們</h1>
+                        <div class="textbox">
+                            <p>049-2292877</p>
+                            <p> 南投市八卦路324號</p>
+                        </div>
+                    </div>
+                    <div class="lboxb">
+                        <h1>營業資訊</h1>
+                        <div class="textbox lboxb">
+                            <p>週一至週五 09:00-18:00</p>
+                            <p>週六、週日 09:00-20:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 中間的那條裝飾縣 -->
+            <div class="Centenbox hrhight">
+                <hr width="1" size="550px">
+            </div>
+            <!-- 右邊的網站地圖連結與線框 -->
+            <div class="Rightbox">
+                <div class="textall">
+                    <a href="">
+                        <div class="textbox rboxa">
+                            <div class="hrbox">
+                                <hr>
+                            </div>
+                            <h1>商品項目</h1>
+                            <div class="hrbox">
+                                <hr>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="textbox rboxb">
+                            <div class="hrbox">
+                                <hr>
+                            </div>
+                            <h1>服務項目</h1>
+                            <div class="hrbox">
+                                <hr>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="textbox rboxc">
+                            <div class="hrbox">
+                                <hr>
+                            </div>
+                            <h1>常見問題</h1>
+                            <div class="hrbox">
+                                <hr>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="textbox rboxd">
+                            <div class="hrbox">
+                                <hr>
+                            </div>
+                            <h1>關於我們</h1>
+                            <div class="hrbox">
+                                <hr>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="navicon">
+            <div class="allicon rboxe">
+                <div class="icon-fb floatL"></div>
+                <div class="icon-ig floatR"></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let navclick = document.querySelector('#navicon');
+        let navicon = document.querySelector('#navshow');
+        let navbox = document.querySelector('.navbox');
+        const LBoxA = document.querySelector('.lboxa')
+        const LBoxB = document.querySelector('.lboxb')
+        const RBoxA = document.querySelector('.rboxa')
+        const RBoxB = document.querySelector('.rboxb')
+        const RBoxC = document.querySelector('.rboxc')
+        const RBoxD = document.querySelector('.rboxd')
+        const RBoxE = document.querySelector('.rboxe')
+        const hrhight = document.querySelector('.hrhight')
+
+        navclick.onclick = function () {
+            if (navicon.classList == ('fas fa-2x fa-bars')) {
+                navicon.classList.remove('fa-bars');
+                navicon.classList.add('fa-times');
+
+                LBoxA.classList.add('L-boxA');
+                LBoxB.classList.add('L-boxB');
+
+                navbox.setAttribute('style', 'transform: translateX(0%);')
+
+                RBoxA.classList.add('R-boxA');
+                RBoxB.classList.add('R-boxB');
+                RBoxC.classList.add('R-boxC');
+                RBoxD.classList.add('R-boxD');
+                RBoxE.classList.add('R-boxE');
+
+                hrhight.classList.add('navhight');
+            } else {
+                navicon.classList.remove('fa-times');
+                navicon.classList.add('fa-bars');
+                LBoxA.classList.remove('L-boxA');
+                LBoxB.classList.remove('L-boxB');
+
+                navbox.setAttribute('style', 'transform: translateX(100%);')
+
+                RBoxA.classList.remove('R-boxA');
+                RBoxB.classList.remove('R-boxB');
+                RBoxC.classList.remove('R-boxC');
+                RBoxD.classList.remove('R-boxD');
+                RBoxE.classList.remove('R-boxE');
+
+                hrhight.classList.remove('navhight');
+            }
+        }
+    </script>
+</body>
+
+</html>
