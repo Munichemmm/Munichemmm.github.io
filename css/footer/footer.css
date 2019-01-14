@@ -5,6 +5,10 @@
         z-index: 0;
         margin-top: -80px;
     }
+    #footer .footer-over{
+        overflow: hidden;
+        height: 100%;
+    }
 
     /* 以下為footer上半部 */
     #footer .footer-top {
@@ -73,14 +77,24 @@
         transform: translate(-50%,40px);
     }
 /* 這邊是footer動畫 */
-    .footer-Jumnps{
+    .footer-Jumps{
         animation-name:Jumps;
         animation-duration: 1.5s;
         animation-fill-mode: forwards;
     }
-    .footer-Jumnph{
+    .footer-Jumph{
         animation-name:Jumph;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+    .footer-Jumpts{
+        animation-name:Jumptexts;
         animation-duration: 1.5s;
+        animation-fill-mode: forwards;
+    }
+    .footer-Jumpth{
+        animation-name:Jumptexth;
+        animation-duration: 0.5s;
         animation-fill-mode: forwards;
     }
     @keyframes Jumps{
@@ -88,11 +102,11 @@
             transform: translate(-50%,400px);
 
         }
-        60%{
+        30%{
             transform: translate(-50%,10px); 
 
         }
-        100%{
+        85%{
             transform: translate(-50%,40px);
         }
     }
@@ -106,6 +120,34 @@
         }
         100%{
             transform: translate(-50%,400px);
+
+        }
+        
+    }
+    @keyframes Jumptexts{
+        0%{
+            transform: translateY(400px);
+        }
+        30%{
+            transform: translateY(-20px);
+
+        }
+        100%{
+            transform: translateY(0px);
+
+        }
+        
+    }
+    @keyframes Jumptexth{
+        0%{
+            transform: translateY(0);
+        }
+        40%{
+            transform: translateY(-20px);
+
+        }
+        100%{
+            transform: translateY(400px);
 
         }
         

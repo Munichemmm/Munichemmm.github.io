@@ -10,9 +10,11 @@
 /* 這邊是nav的漢堡條 */
 #navicon {
     position: fixed;
-    z-index: 3;
+    z-index: 100;
     top: 20px;
     right: 72px;
+    color: #D4B9B9;
+    text-shadow: 1px 1px 3px #fff;
 }
 
 /* 這邊是nav下的內容 */
