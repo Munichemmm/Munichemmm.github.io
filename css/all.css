@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    position: relative;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1250px;
+    height: 100%;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 23px;
+}
+
+p {
+    font-size: 23px;
+    letter-spacing: 3px;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* 以下為button */
+.buttn {
+    width: 154px;
+    height: 46px;
+    border: #000 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttn:hover {
+    background-color: #ccc;
+}
+
+/* 以上為button */

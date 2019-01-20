@@ -7,14 +7,24 @@
 .clear{
     clear: both;
 }
+
 /* 這邊是nav的漢堡條 */
 #navicon {
     position: fixed;
-    z-index: 3;
+    z-index: 100;
     top: 20px;
     right: 72px;
+    color: #000;
+    text-shadow: 1px 1px 3px #fff;
+    cursor: pointer;
 }
-
+#navicon:hover {
+    position: fixed;
+    z-index: 100;
+    top: 20px;
+    right: 72px;
+    color: #555;
+}
 /* 這邊是nav下的內容 */
 .navbox {
     width: 100vw;
