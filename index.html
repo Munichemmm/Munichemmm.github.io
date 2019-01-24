@@ -14,271 +14,469 @@
     <link rel="stylesheet" href="css/header/header.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
         crossorigin="anonymous">
+
 </head>
 
 <body>
-    <!-- Logo -->
-    <div id="header">
-        <div class="header-back-up">
+    <div class="pc">
+        <!-- Logo -->
+        <div id="header">
+            <div class="header-back-up">
+                <a href="/index.html">
+                    <div class="logo-box">
+                        <div class="logo"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- navbar -->
+        <nav id="navicon"><i id="navshow" class="fas fa-2x fa-bars"></i></nav>
+        <!-- <i class="fas fa-times"></i> -->
+
+        <!-- 以下是navbox的內容 -->
+        <div class="navbox">
+            <!-- NAV內的LOGO -->
             <a href="/index.html">
-                <div class="logo-box">
-                    <div class="logo"></div>
+                <div class="navLogo"><img src="/img/home/Logo-05.png" alt=""></div>
+            </a>
+            <div class="box">
+                <!-- 左邊的資訊內容 -->
+                <div class="Leftbox">
+                    <div class="textall">
+                        <div class="lboxa">
+                            <h1>聯絡我們</h1>
+                            <div class="textbox">
+                                <p>049-2292877</p>
+                                <p> 南投市八卦路324號</p>
+                            </div>
+                        </div>
+                        <div class="lboxb">
+                            <h1>營業資訊</h1>
+                            <div class="textbox lboxb">
+                                <p>週一至週五 09:00-18:00</p>
+                                <p>週六、週日 09:00-20:00</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <!-- 中間的那條裝飾縣 -->
+                <div class="Centenbox hrhight">
+                    <hr width="1" size="550px">
+                </div>
+                <!-- 右邊的網站地圖連結與線框 -->
+                <div class="Rightbox">
+                    <div class="textall">
+                        <a href="/store.html">
+                            <div class="textbox rboxa">
+                                <div class="hrbox">
+                                    <hr>
+                                </div>
+                                <h1>商品項目</h1>
+                                <div class="hrbox">
+                                    <hr>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/service.html">
+                            <div class="textbox rboxb">
+                                <div class="hrbox">
+                                    <hr>
+                                </div>
+                                <h1>服務項目</h1>
+                                <div class="hrbox">
+                                    <hr>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/common.html">
+                            <div class="textbox rboxc">
+                                <div class="hrbox">
+                                    <hr>
+                                </div>
+                                <h1>常見問題</h1>
+                                <div class="hrbox">
+                                    <hr>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/about.html">
+                            <div class="textbox rboxd">
+                                <div class="hrbox">
+                                    <hr>
+                                </div>
+                                <h1>關於我們</h1>
+                                <div class="hrbox">
+                                    <hr>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- slider -->
+        <header id="slider">
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <!-- mascot  -->
+                <div class="mascot">
+                    <div class="lion-L"></div>
+                    <div class="lion-R"></div>
+                </div>
+                <div class="swiper-wrapper">
+                    <!-- 圖片在這邊放 -->
+                    <div class="swiper-slide">
+                        <div class="back"><img src="/img/banner/banner01.jpg" alt=""></div>
+                        <div class="container"><img src="/img/banner/banner01.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="back"><img src="/img/banner/banner02.jpg" alt=""></div>
+                        <div class="container"><img src="/img/banner/banner02.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="back"><img src="/img/banner/banner03.jpg" alt=""></div>
+                        <div class="container"><img src="/img/banner/banner03.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="back"><img src="/img/banner/banner04.jpg" alt=""></div>
+                        <div class="container"><img src="/img/banner/banner04.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="back"><img src="/img/banner/banner05.jpg" alt=""></div>
+                        <div class="container"><img src="/img/banner/banner05.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="back"><img src="/img/banner/banner06.jpg" alt=""></div>
+                        <div class="container"><img src="/img/banner/banner06.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="back"><img src="/img/banner/banner07.jpg" alt=""></div>
+                        <div class="container"><img src="/img/banner/banner07.jpg" alt=""></div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </header>
+
+        <!-- 商品項目的區塊 -->
+        <section id="section1">
+            <div class="container">
+                <div class="sec1_Left"></div>
+                <div class="sec1_Right">
+                    <div class="hight-center">
+                        <div class="title">
+                            <h1>精選進口巧克力豆結合香草豆莢新鮮奶油</br>以最完美的比例而生的慕尼黑巧克力。</h1>
+                        </div>
+                        <hr>
+                        <div class="conten">
+                            <p>精選進口巧克力豆結合香草豆莢與新鮮奶油以最完美的比例而生的慕尼黑巧克力！</br>
+                                是否也忘了有多久沒有好好的愛自己了呢！眼前這層層疊疊的小方塊，質地絨密入口即化，微苦的醇香，讓您遠離塵囂盡情的沈浸在屬於自己的世界裡。
+                            </p>
+                        </div>
+                        <div class="buttn"><span>商品項目</span></div>
+                    </div>
+                </div>
+                <div class="caler"></div>
+            </div>
+        </section>
+
+        <!-- 更多連結的區塊 -->
+        <section id="section2">
+            <div class="container">
+                <div class="more-all">
+
+                    <div class="more">
+                        <div class="more-img"><img src="img/home/img-02.png" alt=""></div>
+                        <div class="more-text">
+                            <h1>精選禮盒</h1>
+                            <p>情人節、聖誕節、生日、拜訪最佳伴手禮品，送給您的親朋好友最幸福的溫度。</p>
+                        </div>
+                    </div>
+                    <div class="more">
+                        <div class="more-img"><img src="img/home/img-03.png" alt=""></div>
+                        <div class="more-text">
+                            <h1>下午茶時光</h1>
+                            <p>時間來到了下午，疲憊了一整天，真想來點濃郁的咖啡配上甜甜的點心，歡迎來到慕尼黑巧克力工坊。</p>
+                        </div>
+                    </div>
+                    <div class="more">
+                        <div class="more-img"><img src="img/home/img-04.png" alt=""></div>
+                        <div class="more-text">
+                            <h1>購買須知</h1>
+                            <p>不一樣的巧克力，我心裡想！原來，巧克力的世界充滿著驚喜，口中味蕾跳動，引領著我進入巧克力的世界。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="more-all">
+                    <div class="more">
+                        <div class="more-btn">
+                            <div class="buttn">
+                                <span>了解更多</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="more">
+                        <div class="more-btn">
+                            <div class="buttn">
+                                <span>了解更多</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="more">
+                        <div class="more-btn">
+                            <div class="buttn">
+                                <span>了解更多</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section3">
+            <div class="container">
+                <div class="sec3_Left">
+                    <div class="hight-center">
+                        <div class="title">
+                            <h1>好的巧克力會有令人有開心與幸福的感覺</br>希望能與您分享我們的傑作</h1>
+                        </div>
+                        <hr>
+                        <div class="conten">
+                            <p>於是我投身在學習製作生巧克力！即使在冬天夜裡，在18度的低溫環境裡，堅持調配出那份未知的完美比例已經記不起經過幾次的失敗，終於完成這份感動。
+                                </br>
+                                </br>
+                                此刻，我終於懂了！那份對兒女無私的愛，我也曾滿盈。
+                            </p>
+                        </div>
+                        <div class="buttn"><span>關於我們</span></div>
+                    </div>
+                </div>
+                <div class="sec3_Right"></div>
+                <div class="caler"></div>
+            </div>
+
+        </section>
+
+        <!-- 頁尾 -->
+        <footer id="footer">
+            <div class="footer-over">
+                <div class="footer-top">
+                    <div class="footer-left"><img src="img/home/Logo-02.png" alt="logo"></div>
+                    <div class="footer-text">
+                        <span>本網內容僅提供教學用途，如有侵權請來信</span></br>
+                        <span>uiux15901@gmail.com</span>
+                    </div>
+                    <div class="footer-right">
+                        <div class="footer-icon floatL">
+                            <div class="icon-ig floatL"><i class="fab fa-facebook-square"></i></div>
+                            <div class="icon-fb floatL"><i class="fab fa-instagram"></i></div>
+                        </div>
+                        <div class="caler"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-img"><img class="imgJump" src="img/home/footer-back.png" alt=""></div>
+        </footer>
+    </div>
+    <div class="mob">
+        <!-- Logo -->
+        <div id="header_mobile">
+            <div class="header-back-up_mobile">
+                <a href="/index.html">
+                    <div class="logo-box_mobile"></div>
+                    <div class="logo_mobile"></div>
+            </div>
             </a>
         </div>
-    </div>
-    <!-- navbar -->
-    <nav id="navicon"><i id="navshow" class="fas fa-2x fa-bars"></i></nav>
-    <!-- <i class="fas fa-times"></i> -->
 
-    <!-- 以下是navbox的內容 -->
-    <div class="navbox">
-        <!-- NAV內的LOGO -->
-        <a href="/index.html">
-            <div class="navLogo"><img src="/img/home/Logo-05.png" alt=""></div>
-        </a>
-        <div class="box">
-            <!-- 左邊的資訊內容 -->
-            <div class="Leftbox">
-                <div class="textall">
-                    <div class="lboxa">
-                        <h1>聯絡我們</h1>
-                        <div class="textbox">
-                            <p>049-2292877</p>
-                            <p> 南投市八卦路324號</p>
+        <!-- navbar -->
+        <nav id="navicon"><i id="navshow" class="fas fa-2x fa-bars"></i></nav>
+        <!-- <i class="fas fa-times"></i> -->
+
+        <!-- 以下是navbox的內容 -->
+        <div class="navbox">
+            <!-- NAV內的LOGO -->
+            <a href="/index.html">
+                <div class="navLogo"><img src="/img/home/Logo-05.png" alt=""></div>
+            </a>
+            <div class="box">
+                <!-- 左邊的資訊內容 -->
+                <div class="Leftbox">
+                    <div class="textall">
+                        <div class="lboxa">
+                            <h1>聯絡我們</h1>
+                            <div class="textbox">
+                                <p>049-2292877</p>
+                                <p> 南投市八卦路324號</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="lboxb">
-                        <h1>營業資訊</h1>
-                        <div class="textbox lboxb">
-                            <p>週一至週五 09:00-18:00</p>
-                            <p>週六、週日 09:00-20:00</p>
+                        <div class="lboxb">
+                            <h1>營業資訊</h1>
+                            <div class="textbox lboxb">
+                                <p>週一至週五 09:00-18:00</p>
+                                <p>週六、週日 09:00-20:00</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- 中間的那條裝飾縣 -->
-            <div class="Centenbox hrhight">
-                <hr width="1" size="550px">
-            </div>
-            <!-- 右邊的網站地圖連結與線框 -->
-            <div class="Rightbox">
-                <div class="textall">
-                    <a href="/store.html">
-                        <div class="textbox rboxa">
-                            <div class="hrbox">
-                                <hr>
+                <!-- 中間的那條裝飾縣 -->
+                <div class="Centenbox hrhight">
+                    <hr width="1" size="550px">
+                </div>
+                <!-- 右邊的網站地圖連結與線框 -->
+                <div class="Rightbox">
+                    <div class="textall">
+                        <a href="/store.html">
+                            <div class="textbox rboxa">
+                                <div class="hrbox">
+                                    <hr>
+                                </div>
+                                <h1>商品項目</h1>
+                                <div class="hrbox">
+                                    <hr>
+                                </div>
                             </div>
-                            <h1>商品項目</h1>
-                            <div class="hrbox">
-                                <hr>
+                        </a>
+                        <a href="/service.html">
+                            <div class="textbox rboxb">
+                                <div class="hrbox">
+                                    <hr>
+                                </div>
+                                <h1>服務項目</h1>
+                                <div class="hrbox">
+                                    <hr>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                    <a href="/service.html">
-                        <div class="textbox rboxb">
-                            <div class="hrbox">
-                                <hr>
+                        </a>
+                        <a href="/common.html">
+                            <div class="textbox rboxc">
+                                <div class="hrbox">
+                                    <hr>
+                                </div>
+                                <h1>常見問題</h1>
+                                <div class="hrbox">
+                                    <hr>
+                                </div>
                             </div>
-                            <h1>服務項目</h1>
-                            <div class="hrbox">
-                                <hr>
+                        </a>
+                        <a href="/about.html">
+                            <div class="textbox rboxd">
+                                <div class="hrbox">
+                                    <hr>
+                                </div>
+                                <h1>關於我們</h1>
+                                <div class="hrbox">
+                                    <hr>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                    <a href="/common.html">
-                        <div class="textbox rboxc">
-                            <div class="hrbox">
-                                <hr>
-                            </div>
-                            <h1>常見問題</h1>
-                            <div class="hrbox">
-                                <hr>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="/about.html">
-                        <div class="textbox rboxd">
-                            <div class="hrbox">
-                                <hr>
-                            </div>
-                            <h1>關於我們</h1>
-                            <div class="hrbox">
-                                <hr>
-                            </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 </div>
             </div>
+        </div>
+
+        <!-- slider -->
+        <header id="slider">
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- 圖片在這邊放 -->
+                    <div class="swiper-slide">
+
+                        <div class="container"><img src="/img/banner/banner01.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-slide">
+
+                        <div class="container"><img src="/img/banner/banner02.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-slide">
+
+                        <div class="container"><img src="/img/banner/banner03.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container"><img src="/img/banner/banner04.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container"><img src="/img/banner/banner05.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container"><img src="/img/banner/banner06.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container"><img src="/img/banner/banner07.jpg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="sec1_mobile">
+            <p>精選進口巧克力豆結合香草豆莢新鮮奶油</p>
+            <p>以最完美的比例而生的慕尼黑巧克力。</p>
+        </div>
+
+        <div class="sec2_mobile">
+        </div>
+
+        <div class="sec3_mobile">
+            <div class="box_mobile">
+                <div class="left_mobile">
+                    <img src="../img/01-首頁/img-02.jpg" alt="">
+                </div>
+                <div class="center_mobile">
+                    <p>下午茶時光</p>
+                </div>
+                <div class="right_mobile">
+                    <p>時間來到了下午，疲憊了一整天，真想來點濃郁的咖啡配上甜甜的點心，歡迎來到慕尼黑巧克力工坊。</p>
+                </div>
+            </div>
+            <div class="box_mobile">
+                <div class="left_mobile">
+                    <img src="../img/01-首頁/img-01.jpg" alt="">
+                </div>
+                <div class="center_mobile">
+                    <p>精選禮盒</p>
+                </div>
+                <div class="right_mobile">
+                    <p>情人節、聖誕節、生日、拜訪最佳伴手禮品，送給您的親朋好友最幸福的溫度。</p>
+                </div>
+            </div>
+            <div class="box_mobile">
+                <div class="left_mobile">
+                    <img src="../img/01-首頁/img-04.jpeg" alt="">
+                </div>
+                <div class="center_mobile">
+                    <p>購買須知</p>
+                </div>
+                <div class="right_mobile">
+                    <p>不一樣的巧克力，我心裡想！原來，巧克力的世界充滿著驚喜，口中味蕾跳動，引領著我進入巧克力的世界。</p>
+                </div>
+            </div>
+            <div class="sec4_mobile">
+                <p>好的巧克力會有令人有開心與幸福的感覺
+                </p>
+                <p>
+                    希望能與您分享我們的傑作
+                </p>
+            </div>
+        </div>
+        <div class="footer_mobile">
+            <div class="leftabout">
+                <div class="buttn"><span>商品項目</span></div>
+            </div>
+            <div class="rightabout">
+                <div class="buttn"><span>關於我們</span></div>
+            </div>
+        </div>
+        <div class="copyright_mobile">
+            <p>本網內容僅提供教學用途，如有侵權請來信</p>
+            <p>uiux15901@gmail.com</p>
         </div>
     </div>
 
-    <!-- slider -->
-    <header id="slider">
-        <!-- Swiper -->
-        <div class="swiper-container">
-            <!-- mascot  -->
-            <div class="mascot">
-                <div class="lion-L"></div>
-                <div class="lion-R"></div>
-            </div>
-            <div class="swiper-wrapper">
-                <!-- 圖片在這邊放 -->
-                <div class="swiper-slide">
-                    <div class="back"><img src="/img/banner/banner01.jpg" alt=""></div>
-                    <div class="container"><img src="/img/banner/banner01.jpg" alt=""></div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="back"><img src="/img/banner/banner02.jpg" alt=""></div>
-                    <div class="container"><img src="/img/banner/banner02.jpg" alt=""></div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="back"><img src="/img/banner/banner03.jpg" alt=""></div>
-                    <div class="container"><img src="/img/banner/banner03.jpg" alt=""></div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="back"><img src="/img/banner/banner04.jpg" alt=""></div>
-                    <div class="container"><img src="/img/banner/banner04.jpg" alt=""></div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="back"><img src="/img/banner/banner05.jpg" alt=""></div>
-                    <div class="container"><img src="/img/banner/banner05.jpg" alt=""></div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="back"><img src="/img/banner/banner06.jpg" alt=""></div>
-                    <div class="container"><img src="/img/banner/banner06.jpg" alt=""></div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="back"><img src="/img/banner/banner07.jpg" alt=""></div>
-                    <div class="container"><img src="/img/banner/banner07.jpg" alt=""></div>
-                </div>
-            </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
-            <!-- Add Arrows -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>
-    </header>
-
-    <!-- 商品項目的區塊 -->
-    <section id="section1">
-        <div class="container">
-            <div class="sec1_Left"></div>
-            <div class="sec1_Right">
-                <div class="hight-center">
-                    <div class="title">
-                        <h1>精選進口巧克力豆結合香草豆莢新鮮奶油</br>以最完美的比例而生的慕尼黑巧克力。</h1>
-                    </div>
-                    <hr>
-                    <div class="conten">
-                        <p>精選進口巧克力豆結合香草豆莢與新鮮奶油以最完美的比例而生的慕尼黑巧克力！</br>
-                            是否也忘了有多久沒有好好的愛自己了呢！眼前這層層疊疊的小方塊，質地絨密入口即化，微苦的醇香，讓您遠離塵囂盡情的沈浸在屬於自己的世界裡。
-                        </p>
-                    </div>
-                    <div class="buttn"><span>商品項目</span></div>
-                </div>
-            </div>
-            <div class="caler"></div>
-        </div>
-    </section>
-
-    <!-- 更多連結的區塊 -->
-    <section id="section2">
-        <div class="container">
-            <div class="more-all">
-
-                <div class="more">
-                    <div class="more-img"><img src="img/home/img-02.png" alt=""></div>
-                    <div class="more-text">
-                        <h1>精選禮盒</h1>
-                        <p>情人節、聖誕節、生日、拜訪最佳伴手禮品，送給您的親朋好友最幸福的溫度。</p>
-                    </div>
-                </div>
-                <div class="more">
-                    <div class="more-img"><img src="img/home/img-03.png" alt=""></div>
-                    <div class="more-text">
-                        <h1>下午茶時光</h1>
-                        <p>時間來到了下午，疲憊了一整天，真想來點濃郁的咖啡配上甜甜的點心，歡迎來到慕尼黑巧克力工坊。</p>
-                    </div>
-                </div>
-                <div class="more">
-                    <div class="more-img"><img src="img/home/img-04.png" alt=""></div>
-                    <div class="more-text">
-                        <h1>購買須知</h1>
-                        <p>不一樣的巧克力，我心裡想！原來，巧克力的世界充滿著驚喜，口中味蕾跳動，引領著我進入巧克力的世界。</p>
-                    </div>
-                </div>
-            </div>
-            <div class="more-all">
-                <div class="more">
-                    <div class="more-btn">
-                        <div class="buttn">
-                            <span>了解更多</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="more">
-                    <div class="more-btn">
-                        <div class="buttn">
-                            <span>了解更多</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="more">
-                    <div class="more-btn">
-                        <div class="buttn">
-                            <span>了解更多</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="section3">
-        <div class="container">
-            <div class="sec3_Left">
-                <div class="hight-center">
-                    <div class="title">
-                        <h1>好的巧克力會有令人有開心與幸福的感覺</br>希望能與您分享我們的傑作</h1>
-                    </div>
-                    <hr>
-                    <div class="conten">
-                        <p>於是我投身在學習製作生巧克力！即使在冬天夜裡，在18度的低溫環境裡，堅持調配出那份未知的完美比例已經記不起經過幾次的失敗，終於完成這份感動。
-                            </br>
-                            </br>
-                            此刻，我終於懂了！那份對兒女無私的愛，我也曾滿盈。
-                        </p>
-                    </div>
-                    <div class="buttn"><span>關於我們</span></div>
-                </div>
-            </div>
-            <div class="sec3_Right"></div>
-            <div class="caler"></div>
-        </div>
-
-    </section>
-
-    <!-- 頁尾 -->
-    <footer id="footer">
-        <div class="footer-over">
-            <div class="footer-top">
-                <div class="footer-left"><img src="img/home/Logo-02.png" alt="logo"></div>
-                <div class="footer-text">
-                    <span>本網內容僅提供教學用途，如有侵權請來信</span></br>
-                    <span>uiux15901@gmail.com</span>
-                </div>
-                <div class="footer-right">
-                    <div class="footer-icon floatL">
-                        <div class="icon-ig floatL"><i class="fab fa-facebook-square"></i></div>
-                        <div class="icon-fb floatL"><i class="fab fa-instagram"></i></div>
-                    </div>
-                    <div class="caler"></div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-img"><img class="imgJump" src="img/home/footer-back.png" alt=""></div>
-    </footer>
     <!-- Swiper JS -->
     <script src="js/swiper/swiper.min.js"></script>
     <script src="js/footer.js"></script>

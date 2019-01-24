@@ -289,3 +289,11 @@ p {
         opacity: 1;
     }
 }
+@media (max-width:1000px){
+    .navbox .box .Leftbox h1, .textbox p {
+        font-size: 28px;
+    }
+    .navbox .box .Leftbox h1, .textbox h1 {
+        font-size: 36px;
+    }
+}
