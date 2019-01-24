@@ -216,7 +216,7 @@ z-index: -1;
     width: 40%;
     height: 100%;
     float: left;
-    background-image: url('../img/home/img-06.png');
+    background-image: url('/img/home/img-06.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
